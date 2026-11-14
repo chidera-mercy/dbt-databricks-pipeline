@@ -32,7 +32,7 @@ cleaned AS (
         search_term,
         search_location,
         {% for keyword in extension_keywords -%}
-        ARRAY_CONTAINS(job_extensions, "{{keyword}}") AS has_{{keyword | lower | replace(' ', '_')}}
+        ARRAY_CONTAINS(job_extensions, "{{keyword}}") AS has_{{slugify(keyword)}}
         {{- "," if not loop.last}}
         {% endfor %}     
     FROM parsed
