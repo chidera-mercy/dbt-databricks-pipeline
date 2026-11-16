@@ -28,7 +28,7 @@ A production dbt pipeline on **Databricks** over 843,097 raw job-posting scrapes
 
 ## ⚙️ The dbt Pipeline
 
-Raw scrapes flow through the medallion layers — raw → staging → intermediate → the star-schema marts — while snapshots capture history off staging. The lineage graph below is every model dbt builds:
+Raw scrapes flow through the medallion layers — raw → staging → intermediate → the star-schema marts — while snapshots capture history off staging. The lineage graph below is those relevant to the fact table build:
 
 ![dbt lineage graph](img/lineage.png)
 
