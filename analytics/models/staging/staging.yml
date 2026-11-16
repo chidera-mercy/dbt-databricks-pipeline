@@ -93,7 +93,7 @@ unit_tests:
     given:
       - input: source('jobs', 'raw_job_postings')
         rows:
-          - {job_id: 1, job_salary: "100K-186K a year"}
+          - {job_id: 1, job_salary: "100K–186K a year"}
           - {job_id: 2, job_salary: "32.50 an hour"}
           - {job_id: 3, job_salary: null}
     expect:

@@ -1,6 +1,6 @@
 # Production Job Postings Pipeline (v2) - dbt + Databricks
 
-[![dbt Docs](https://img.shields.io/badge/dbt_docs-live-blue)](https://lukebarousse.github.io/dbt_Analytics_Engineering_Course/project2/)
+[![dbt Docs](https://img.shields.io/badge/dbt_docs-live-blue)](https://chidera-mercy.github.io/dbt-databricks-pipeline/)
 ![Databricks](https://img.shields.io/badge/warehouse-Databricks-FF3621)
 
 ![P2 pipeline architecture](img/p2_pipeline.png)
@@ -11,7 +11,7 @@ A production dbt pipeline on **Databricks** over 843,097 raw job-posting scrapes
 - Tracks a year of salary history with SCD2 snapshots — 504,591 version rows
 - Loads incrementally and runs itself on a scheduled Databricks Job — no tokens anywhere
 
-> **v2 of this pipeline** — [v1](../project_1/) built the foundations on DuckDB + GitHub Actions. v2 moves the same dataset to a real warehouse: Databricks, SCD2 history, incremental loads, a scheduled job.
+> **v2 of this pipeline** — [v1](https://github.com/chidera-mercy/dbt-duckdb-pipeline) built the foundations on DuckDB + GitHub Actions. v2 moves the same dataset to a real warehouse: Databricks, SCD2 history, incremental loads, a scheduled job.
 
 | What I Built | How I Implemented | Where to Look |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ The marts keep each job's **latest** scrape — the snapshot table keeps **every
 
 Structure, tests, and column descriptions were written along the way — the docs site is a rendering of work already done:
 
-**→ [lukebarousse.github.io/dbt_Analytics_Engineering_Course/project2/](https://lukebarousse.github.io/dbt_Analytics_Engineering_Course/project2/)**
+**→ [chidera-mercy.github.io/dbt-databricks-pipeline/](https://chidera-mercy.github.io/dbt-databricks-pipeline/)**
 
 The site shows:
 
