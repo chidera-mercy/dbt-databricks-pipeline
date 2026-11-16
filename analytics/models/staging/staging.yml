@@ -89,7 +89,7 @@ models:
 unit_tests:
   - name: test_parse_salary_shape
     description: This handles a range, a single value and no salary at all
-    model: stg_job_postingd
+    model: stg_job_postings
     given:
       - input: source('jobs', 'raw_job_postings')
         rows:
